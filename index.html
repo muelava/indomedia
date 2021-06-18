@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <title>Indomedia</title>
+  </head>
+  <body>
+    <button class="btn shadow-sm" id="btnTop">
+      <i class="fa fa-chevron-up"></i>
+    </button>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-transparant"
+      id="navbar"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-uppercase" href="#">Indomedia</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link marker active" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link marker" href="#jasa">Jasa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link marker" href="#panduan">Panduan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link marker" href="#">Tentang</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link btn fw-bold nomorhp" href="#">
+                <i class="fa fa-phone"></i> +62 882-1053-4512</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold pe-0" id="login" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- jmbotron -->
+    <div class="jumbotron jumbotron-fluid row align-items-center mx-0">
+      <div class="container col-md-5">
+        <h1 class="fw-bold">
+          Praktis Membuat Aplikasi Web dan Multimedia dengan Harga Murah!
+        </h1>
+        <p class="lead">
+          Temukan lebih banyak kebebasan untuk mendesain, mengelola dan
+          mengembangkan aplikasi juga berbagai media dilengkapi fitur persis
+          seperti yang anda inginkan. Langsung siap pakai!
+        </p>
+        <a href="#jasa" class="btn tombol mt-4">Lihat Penawaran</a>
+      </div>
+      <div class="container col-md-4">
+        <img class="img-fluid" src="assets/img/hero1.png" width="100%" alt="" />
+      </div>
+    </div>
+
+    <!-- container -->
+    <div class="container">
+      <section class="row justify-content-between my-3" id="section1">
+        <p class="fw-bold mb-1">Kenapa Pilih Kami?</p>
+        <div class="col-md-5 d-flex align-items-center justify-content-center">
+          <img src="assets/img/kenapa-kami.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md-6">
+          <h3 class="fw-bold">
+            Membuat Media Dan Aplikasi Website Dengan Fitur Sesuai Keinginan
+            Anda. Revisi Tanpa Batas, Sampai Deal!
+          </h3>
+          <p class="text-dark">
+            Bersama kami akan membantu Anda mewujudkan segala kebutuhan online.
+            Baik untuk membangun website, Undangan Online, membuka toko online
+            hingga handle joki skripsi dan tugas akhir. Mulai mewujudkan
+            keinginan Anda untuk berkarya
+          </p>
+        </div>
+      </section>
+      <section
+        class="row justify-content-center text-center mt-5"
+        id="section2"
+      >
+        <div class="col-md-4" id="kenapa1">
+          <img src="assets/img/consult.png" alt="" />
+          <p class="fw-bold my-2">
+            <img src="assets/img/check.png" alt="" /> Konsultasi
+          </p>
+          <p>
+            Kami memberikan kesempatan berkonsultasi untuk membantu kembangkan
+            ide anda..
+          </p>
+        </div>
+        <div class="col-md-4" id="kenapa2">
+          <img src="assets/img/revision.png" alt="" />
+          <p class="fw-bold my-2">
+            <img src="assets/img/check.png" alt="" /> Revisi Suka-suka
+          </p>
+          <p>
+            Jangan khawatir bagi anda yang ingin mengubah sebuah ide yang kurang
+            pas, karena kami memberikan layanan bebas revisi sampe deal.
+          </p>
+        </div>
+        <div class="col-md-4" id="kenapa3">
+          <img src="assets/img/maintenance.png" alt="" />
+          <p class="fw-bold my-2">
+            <img src="assets/img/check.png" alt="" /> Maentenance
+          </p>
+          <p>
+            Bebas maintenance gratis hingga maksimal 5 bulan (khusus website)
+          </p>
+        </div>
+      </section>
+
+      <section class="mt-5" id="section3">
+        <p class="fw-bold my-2" id="jasa">Mulai Temukan Penawaran</p>
+        <h3 class="fw-bold">
+          Temui Penawaran Berdasarkan Kategori Yang Kami Sediakan
+        </h3>
+        <div class="row justify-content-between mt-5">
+          <a
+            href="jasa.html"
+            class="btn btn-ligh shadow-sm col-sm-3 px-5"
+            id="tawaran1"
+          >
+            <div class="d-flex">
+              <img src="assets/img/wedding-icon.png" alt="" />
+            </div>
+            <div
+              class="
+                caption
+                d-flex
+                justify-content-between
+                align-items-center
+                mt-2
+              "
+            >
+              <div>
+                <p class="text-dark fw-bold">Wedding Invitation</p>
+                <p>Website atau Video</p>
+              </div>
+              <i class="fa fa-chevron-right fa-2x"></i>
+            </div>
+          </a>
+          <a
+            href="jasa.html"
+            class="btn btn-ligh shadow-sm col-sm-3 px-5"
+            id="tawaran2"
+          >
+            <div class="d-flex">
+              <img src="assets/img/buildweb-icon.png" alt="" />
+            </div>
+            <div
+              class="
+                caption
+                d-flex
+                justify-content-between
+                align-items-center
+                mt-2
+              "
+            >
+              <div>
+                <p class="text-dark fw-bold">Build Website</p>
+                <p>Company & Online Shop</p>
+              </div>
+              <i class="fa fa-chevron-right fa-2x"></i>
+            </div>
+          </a>
+          <a
+            href="jasa.html"
+            class="btn btn-ligh shadow-sm col-sm-3 px-5"
+            id="tawaran3"
+          >
+            <div class="d-flex">
+              <img src="assets/img/si-icon.png" alt="" />
+            </div>
+            <div
+              class="
+                caption
+                d-flex
+                justify-content-between
+                align-items-center
+                mt-2
+              "
+            >
+              <div>
+                <p class="text-dark fw-bold">System Informasi</p>
+                <p>Pembuatan Aplikasi SI</p>
+              </div>
+              <i class="fa fa-chevron-right fa-2x"></i>
+            </div>
+          </a>
+          <a
+            href="jasa.html"
+            class="btn btn-ligh shadow-sm col-sm-3 px-5"
+            id="tawaran4"
+          >
+            <div class="d-flex">
+              <img src="assets/img/joki-icon.png" alt="" />
+            </div>
+            <div
+              class="
+                caption
+                d-flex
+                justify-content-between
+                align-items-center
+                mt-2
+              "
+            >
+              <div>
+                <p class="text-dark fw-bold">Joki Skripsi</p>
+                <p>Susun - Perancangan Apk</p>
+              </div>
+              <i class="fa fa-chevron-right fa-2x"></i>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="mt-5" id="section4">
+        <p class="fw-bold" id="panduan">Bagaimana Cara Pesan Jasa Kami?</p>
+        <h3 class="fw-bold">Ikuti Panduan Pemesanan!</h3>
+        <div class="row justify-content-center mt-5">
+          <div class="col-md">
+            <div class="d-flex align-items-start mb-3">
+              <img src="assets/img/cara 1.png" alt="" />
+              <span class="shadow ms-4 p-3" id="cara1">
+                <p>
+                  Cari dan temukan jasa kemudian pilih paket sesuai kebutuhan
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Distinctio, vitae.
+                </p>
+              </span>
+            </div>
+            <div class="d-flex align-items-start mb-3">
+              <img src="assets/img/cara 2.png" alt="" />
+              <span class="shadow ms-4 p-3" id="cara2">
+                <p>
+                  Pada paket yang dipilih, masukan data kebutuhan (rincian) yang
+                  Anda inginkan
+                </p>
+              </span>
+            </div>
+            <div class="d-flex align-items-start mb-3">
+              <img src="assets/img/cara 3.png" alt="" />
+              <span class="shadow ms-4 p-3" id="cara3">
+                <p>
+                  Konfirmasi pesanan Anda maksimal 1x24 jam. Pihak manager kami
+                  akan menangani project dan akan segera menghubungi Anda.
+                </p>
+              </span>
+            </div>
+            <div class="d-flex align-items-start mb-3">
+              <img src="assets/img/cara 4.png" alt="" />
+              <span class="shadow ms-4 p-3" id="cara4">
+                <p>
+                  Ketika Anda sudah melakukan checkout minimal 50%, pesanan Anda
+                  akan segera kami kerjakan.
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center py-4" id="step">
+            <img src="assets/img/step1.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="mt-5" id="section5">
+        <p class="fw-bold">Testimoney</p>
+        <h3 class="fw-bold">Review & Ulasan</h3>
+        <div class="row justify-content-center">
+          <div class="col-sm-3 row mt-2" id="review1">
+            <img
+              src="assets/img/image-testy.png"
+              alt=""
+              class="img-fluid mx-auto"
+              height="141"
+              width="229"
+            />
+            <p class="text-center p-2 fw-bold">Web Wedding Invitation</p>
+            <span class="text-center fw-bold">
+              <i class="fa fa-star text-warning"></i>
+              <i class="fa fa-star text-warning"></i>
+              <i class="fa fa-star text-warning"></i>
+              <i class="fa fa-star text-warning"></i>
+              <i class="fa fa-star text-warning"></i> (10)
+            </span>
+          </div>
+          <div class="col-sm-3 row mt-2" id="review2">
+            <img
+              src="assets/img/image-testy.png"
+              alt=""
+              class="img-fluid mx-auto"
+              height="141"
+              width="229"
+            />
+            <p class="text-center p-2 fw-bold">System Informasi</p>
+            <span class="text-center fw-bold">
+              <i class="fa fa-star text-warning"></i>
+              <i class="fa fa-star text-warning"></i>
+              <i class="fa fa-star text-warning"></i>
+              <i class="fa fa-star text-warning"></i>
+              <i class="fa fa-star text-warning"></i> (5)
+            </span>
+          </div>
+          <div class="col-sm-3 row mt-2" id="review3">
+            <img
+              src="assets/img/image-testy.png"
+              alt=""
+              class="img-fluid mx-auto"
+              height="141"
+              width="229"
+            />
+            <p class="text-center p-2 fw-bold">Company Profile</p>
+            <span class="text-center fw-bold">
+              <i class="fa fa-star text-warning"></i>
+              <i class="fa fa-star text-warning"></i>
+              <i class="fa fa-star text-warning"></i>
+              <i class="fa fa-star text-warning"></i>
+              <i class="fa fa-star text-warning"></i> (8)
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="row justify-content-center" id="section6">
+        <div class="col-md-6 text-center">
+          <h3 class="fw-bold">Siap Wujudkan Ide Anda ?</h3>
+          <p>
+            Ketika berkaitan dengan teknologi IT untuk personal atau perusahaan
+            dan Anda membutuhkan seseorang yang ahli. Izinkan kami menunjukkan
+            kepada Anda sebuah layanan IT yang responsif, amanah, dan dapat
+            diandalkan.
+          </p>
+          <a href="#" class="btn tombol mt-4 py-2 px-3">
+            Mulai Konsultasi Gratis
+          </a>
+        </div>
+      </section>
+      <section class="mt-5" id="section7">
+        <h3 class="text-center fw-bold mb-4">BLOG</h3>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              class="active"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <div class="row">
+                <a class="btn col-md-3" href="#">
+                  <img
+                    src="assets/img/thumbnail-1.png"
+                    width="200"
+                    class=""
+                    alt="..."
+                  />
+                  <p class="fw-bold pt-2">Apa itu Website Company Profile?</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="col-1">
+                      <img
+                        src="assets/img/profile-elang.png"
+                        alt=""
+                        width="15"
+                      />
+                    </div>
+                    <div class="col w-100">
+                      <p class="mt-1">Mochammad Elang Hardifal</p>
+                      <p>Founder & UI/UX Dsign</p>
+                      <p>Senin, 27 Mei 2021</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <div class="row">
+                <a class="btn col-md-3" href="#">
+                  <img
+                    src="assets/img/thumbnail-1.png"
+                    width="200"
+                    class=""
+                    alt="..."
+                  />
+                  <p class="fw-bold pt-2">Apa itu Website Company Profile?</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="col-1">
+                      <img
+                        src="assets/img/profile-elang.png"
+                        alt=""
+                        width="15"
+                      />
+                    </div>
+                    <div class="col w-100">
+                      <p class="mt-1">Mochammad Elang Hardifal</p>
+                      <p>Founder & UI/UX Dsign</p>
+                      <p>Senin, 27 Mei 2021</p>
+                    </div>
+                  </div>
+                </a>
+                <a class="btn col-md-3" href="#">
+                  <img
+                    src="assets/img/thumbnail-2.png"
+                    width="200"
+                    class=""
+                    alt="..."
+                  />
+                  <p class="fw-bold pt-2">
+                    Apa Saja Fitur Yang Harus Dimiliki Online Shop ?
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="col-1">
+                      <img
+                        src="assets/img/profile-user.png"
+                        alt=""
+                        width="15"
+                      />
+                    </div>
+                    <div class="col w-100">
+                      <p class="mt-1">Yogi Teza</p>
+                      <p>Co-Founder & Frontend</p>
+                      <p>Rabu, 26 Mei 2021</p>
+                    </div>
+                  </div>
+                </a>
+                <a class="btn col-md-3" href="#">
+                  <img
+                    src="assets/img/thumbnail-3.png"
+                    width="200"
+                    class=""
+                    alt="..."
+                  />
+                  <p class="fw-bold pt-2">Cara Memulai Bisnis Tanpa Modal</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="col-1">
+                      <img
+                        src="assets/img/profile-user.png"
+                        alt=""
+                        width="15"
+                      />
+                    </div>
+                    <div class="col w-100">
+                      <p class="mt-1">Andie Arief</p>
+                      <p>Co-Founder & Backend</p>
+                      <p>Selasa, 25 Mei 2021</p>
+                    </div>
+                  </div>
+                </a>
+                <a class="btn col-md-3" href="#">
+                  <img
+                    src="assets/img/thumbnail-4.png"
+                    width="200"
+                    class=""
+                    alt="..."
+                  />
+                  <p class="fw-bold pt-2">
+                    Tips Memilih Nama Domain Untuk Bisnis
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="col-1">
+                      <img
+                        src="assets/img/profile-elang.png"
+                        alt=""
+                        width="15"
+                      />
+                    </div>
+                    <div class="col w-100">
+                      <p class="mt-1">Mochammad Elang Hardifal</p>
+                      <p>Founder & UI/UX Dsign</p>
+                      <p>Selasa, 25 Mei 2021</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <a class="btn col-md-3" href="#">
+                  <img
+                    src="assets/img/thumbnail-1.png"
+                    width="200"
+                    class=""
+                    alt="..."
+                  />
+                  <p class="fw-bold pt-2">Apa itu Website Company Profile?</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="col-1">
+                      <img
+                        src="assets/img/profile-elang.png"
+                        alt=""
+                        width="15"
+                      />
+                    </div>
+                    <div class="col w-100">
+                      <p class="mt-1">Mochammad Elang Hardifal</p>
+                      <p>Founder & UI/UX Dsign</p>
+                      <p>Senin, 27 Mei 2021</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <footer class="row justify-content-between">
+        <div class="col-5">
+          <h3 class="text-uppercase">Indomedia</h3>
+          <p>
+            Jasa layanan media dan pembuatan aplikasi berbasis dengan fitur
+            suka-suka dari developer yang pengalaman di bidangnya masing-masing.
+          </p>
+        </div>
+        <div class="col-md">
+          <h3>Produk</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#">Video</a>
+            </li>
+            <li>
+              <a href="#">Website</a>
+            </li>
+            <li>
+              <a href="#">Web Wedding Invitation</a>
+            </li>
+            <li>
+              <a href="#">System Informasi</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md">
+          <h3 class="text-capitalize">Legal</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#">Terms Of Services</a>
+            </li>
+            <li>
+              <a href="#">Disclaimer</a>
+            </li>
+            <li>
+              <a href="#">Privacy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md">
+          <h3 class="text-capitalize">Help</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#">Support</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md">
+          <h3 class="text-capitalize">Ikuti</h3>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#">
+                <img src="assets/img/twitter.png" alt="" />
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <img src="assets/img/facebook.png" alt="" />
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <img src="assets/img/instagram.png" alt="" />
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <img src="assets/img/youtube.png" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <!-- copyright -->
+    <hr class="mt-5" />
+    <p class="copyright text-center py-2">
+      Copyright © 2021-<span id="years"></span>
+      <a href="#" class="fw-bold">Indomedia</a> All Right Reserved
+    </p>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="assets/js/main.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
