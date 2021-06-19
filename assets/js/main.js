@@ -10,7 +10,7 @@ function myFunction() {
   }
 
   // scrolll view
-  console.log(document.documentElement.scrollTop);
+  // console.log(document.documentElement.scrollTop);
 }
 
 
@@ -177,6 +177,8 @@ $(window).scroll(function(){
     $('html,body').animate({scrollTop:0},1500,'easeInOutExpo');
   }
 
+
+  // document effect if click href
   $(document).ready(function(){
     $("a").on('click', function(event) {
   

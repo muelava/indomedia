@@ -9,6 +9,7 @@ $font-family: "Poppins", sans-serif;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.16);
   transition: 0.5s;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -330,6 +331,83 @@ $font-family: "Poppins", sans-serif;
           font-size: 18px;
         }
       }
+      #package {
+        .choice {
+          #list1,
+          #list2 {
+            border-radius: 25px;
+            background-color: #e5e9f2;
+            box-shadow: initial;
+            transition: 0.3s ease;
+          }
+          .aktif,
+          #list1:active,
+          #list2:active {
+            background: #4da0ff !important;
+            color: #f8f8f8;
+            box-shadow: 0px 0px 7px rgb(143, 143, 143) !important;
+          }
+        }
+        .description {
+          #desclist1,
+          #desclist2 {
+            a#pricelist {
+              border-radius: 25px;
+              background: linear-gradient(to bottom, #3a6ce9, #0decfe);
+              color: #fff;
+              transition: 0.5s;
+              position: relative;
+              margin-bottom: 1em;
+
+              h3 {
+                font-size: 38px;
+                transition: 0.3s;
+                position: relative;
+                text-align: center;
+                sup {
+                  font-size: 14px;
+                  position: absolute;
+                  transform: translate(-80%, 0);
+                }
+              }
+              h3.basic::before {
+                content: "Basic";
+                top: -0.5em;
+                transform: translate(-10%, 0);
+                position: absolute;
+                opacity: 0.2;
+              }
+              h3.standar::before {
+                content: "Standar";
+                top: -0.5em;
+                transform: translate(-25%, 0);
+                position: absolute;
+                opacity: 0.2;
+              }
+              h3.premium::before {
+                content: "Premium";
+                top: -0.5em;
+                transform: translate(-28%, 0);
+                position: absolute;
+                opacity: 0.2;
+              }
+              ul {
+                li {
+                  font-size: 14px;
+                  line-height: 3em;
+                  text-shadow: 1px 2px 7px rgb(189, 189, 189);
+                }
+              }
+            }
+            #pricelist:hover {
+              color: #444444;
+              background: initial;
+              border: 5px solid #4da0ff;
+              transform: translate(0%, -3%) !important;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -484,6 +562,18 @@ $font-family: "Poppins", sans-serif;
           }
           div {
             margin-top: 2em;
+          }
+        }
+      }
+
+      // css jasa break point
+      div#content-jasa {
+        #package {
+          .choice {
+            #list1 {
+              margin-bottom: 0.5em;
+              margin-right: 0 !important;
+            }
           }
         }
       }

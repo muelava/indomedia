@@ -334,6 +334,100 @@
   font-size: 18px;
 }
 
+* body div#content-jasa #package .choice #list1,
+* body div#content-jasa #package .choice #list2 {
+  border-radius: 25px;
+  background-color: #e5e9f2;
+  -webkit-box-shadow: initial;
+          box-shadow: initial;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+* body div#content-jasa #package .choice .aktif,
+* body div#content-jasa #package .choice #list1:active,
+* body div#content-jasa #package .choice #list2:active {
+  background: #4da0ff !important;
+  color: #f8f8f8;
+  -webkit-box-shadow: 0px 0px 7px #8f8f8f !important;
+          box-shadow: 0px 0px 7px #8f8f8f !important;
+}
+
+* body div#content-jasa #package .description #desclist1 a#pricelist,
+* body div#content-jasa #package .description #desclist2 a#pricelist {
+  border-radius: 25px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3a6ce9), to(#0decfe));
+  background: linear-gradient(to bottom, #3a6ce9, #0decfe);
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+* body div#content-jasa #package .description #desclist1 a#pricelist h3,
+* body div#content-jasa #package .description #desclist2 a#pricelist h3 {
+  font-size: 38px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  text-align: center;
+}
+
+* body div#content-jasa #package .description #desclist1 a#pricelist h3 sup,
+* body div#content-jasa #package .description #desclist2 a#pricelist h3 sup {
+  font-size: 14px;
+  position: absolute;
+  -webkit-transform: translate(-80%, 0);
+          transform: translate(-80%, 0);
+}
+
+* body div#content-jasa #package .description #desclist1 a#pricelist h3.basic::before,
+* body div#content-jasa #package .description #desclist2 a#pricelist h3.basic::before {
+  content: "Basic";
+  top: -0.5em;
+  -webkit-transform: translate(-10%, 0);
+          transform: translate(-10%, 0);
+  position: absolute;
+  opacity: 0.2;
+}
+
+* body div#content-jasa #package .description #desclist1 a#pricelist h3.standar::before,
+* body div#content-jasa #package .description #desclist2 a#pricelist h3.standar::before {
+  content: "Standar";
+  top: -0.5em;
+  -webkit-transform: translate(-25%, 0);
+          transform: translate(-25%, 0);
+  position: absolute;
+  opacity: 0.2;
+}
+
+* body div#content-jasa #package .description #desclist1 a#pricelist h3.premium::before,
+* body div#content-jasa #package .description #desclist2 a#pricelist h3.premium::before {
+  content: "Premium";
+  top: -0.5em;
+  -webkit-transform: translate(-28%, 0);
+          transform: translate(-28%, 0);
+  position: absolute;
+  opacity: 0.2;
+}
+
+* body div#content-jasa #package .description #desclist1 a#pricelist ul li,
+* body div#content-jasa #package .description #desclist2 a#pricelist ul li {
+  font-size: 14px;
+  line-height: 3em;
+  text-shadow: 1px 2px 7px #bdbdbd;
+}
+
+* body div#content-jasa #package .description #desclist1 #pricelist:hover,
+* body div#content-jasa #package .description #desclist2 #pricelist:hover {
+  color: #444444;
+  background: initial;
+  border: 5px solid #4da0ff;
+  -webkit-transform: translate(0%, -3%) !important;
+          transform: translate(0%, -3%) !important;
+}
+
 @media (max-width: 991px) {
   * body nav.navbar {
     background: #f8f8f8;
@@ -413,6 +507,10 @@
   }
   * body .container footer div {
     margin-top: 2em;
+  }
+  * body div#content-jasa #package .choice #list1 {
+    margin-bottom: 0.5em;
+    margin-right: 0 !important;
   }
 }
 
