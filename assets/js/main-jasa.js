@@ -78,3 +78,11 @@ $('#list2').click(function(){
       function(){
       $("#basic,#standar,#premium").css("color","#ffffff");
       })
+
+
+// dapatkan url
+    let url = "Home"+window.location.pathname;
+    let url2 = url.replace("/"," > ")
+    let url3 = url2.replace(".html","")
+    let urlReplace = url3.replace(".php","")
+    $(".url").html(urlReplace);
